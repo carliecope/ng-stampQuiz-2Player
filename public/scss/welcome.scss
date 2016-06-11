@@ -1,0 +1,159 @@
+@import "bourbon";
+@import "neat";
+@import url(https://fonts.googleapis.com/css?family=Coming+Soon);
+
+$blue: #84D4EF;
+$white: #F2F2F2;
+$off_white: #ECECEC;
+$gray_dk: #333333;
+
+$rust: #800000;
+
+$min_md_width: 768px;
+$max_md_width: 1024px;
+
+/*-----------------------Welcome------------------------*/
+.text_holder {
+  @include fill-parent;
+  overflow: hidden;
+  background-color: transparent;
+  padding: 0 1em;
+  border-radius: 5px;
+  padding: 0.4em;
+  margin-top: 10vh;
+
+    @media screen and (min-width: $min_md_width) { 
+      // background-image: url("../img/vintage-postcard.jpg");
+      // background-repeat: no-repeat;
+      // background-size: contain;
+      background-color: transparent;
+      padding: 0;
+      border-radius: 0;
+      margin-top: 0;
+      margin-left: 2em;
+      height: 92vh;
+    }
+}
+.text_holder::before {
+  content: ' ';
+  display: block;
+  position: fixed;
+  background-color: white;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+.welcome_text {
+  @include fill-parent;
+  overflow: hidden;
+
+}
+.welcome {
+    @include fill-parent;
+    color: $rust;
+    font-size: 2.5em;
+    margin: 0;
+    
+    @media screen and (min-width: $min_md_width) { 
+      width: 50%;
+      font-size: 3em;
+    }
+}
+.wel_instruction {
+  @include fill-parent;
+  font-size: 1em;
+  font-weight: bolder;
+  color: $rust;
+  padding: 0.5em;
+  border-radius: 0.8em; 
+  background-color: $white;
+
+  @media screen and (min-width: $min_md_width) { 
+    width: 50%;
+    font-size: 1em;
+  }
+}
+.form_cont {
+  @include fill-parent;
+  overflow: hidden;
+  
+  @media screen and (min-width: $min_md_width) { 
+    height: 100%;
+    margin-top: 2em;
+  }
+}
+.usernameForm {
+  @include fill-parent;
+
+  @media screen and (min-width: $min_md_width) { 
+    width: 35%;
+  }
+}
+.userName_input {
+  @include fill-parent;
+  margin: 0 auto;
+  border: $white 2px solid;
+  background-color: $white;
+  border-radius: 4px;
+  padding: 0.2em;
+
+  &:focus {
+    outline: 0;
+  }
+}
+input[type="text"] {
+    font-family: 'Coming Soon', cursive;
+    font-size: 1em;
+    height: 3em;
+    border: none;
+
+    input[type="text"]:focus {
+      outline: none;
+    }
+
+    @media screen and (min-width: $min_md_width) { 
+      font-size: 1em;
+      height: 2em;
+    }
+}
+.submitBtn_cont {
+  @include fill-parent;
+  padding-right: 0.4em;
+  overflow: hidden;
+  margin: 0.5em 0;
+
+  @media screen and (min-width: $min_md_width) { 
+    width: 50%;
+  }
+}
+#userSubmitBtn {
+  font-family: 'Coming Soon', cursive;
+  font-weight: bolder;
+  font-size: 1em;
+  background-color: $white;
+  border: 2px $white solid;
+  text-shadow: none;
+  text-shadow: none;
+  border-radius: 4px;
+  padding: 0.4em;
+  color: $rust;
+  &:focus {
+    outline: 0;
+  }
+  &:hover {
+    background-color: $rust;
+    border: 2px $rust solid;
+    color: $white;
+    cursor: pointer;
+  }
+  @media screen and (min-width: $min_md_width) { 
+    font-size: 1em;
+    padding: 0.3em;
+  }
+}
+.transparent {
+  background-color: transparent;
+}

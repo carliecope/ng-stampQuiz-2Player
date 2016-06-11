@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Coming+Soon);
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/*-----------------------preGame------------------------*/
+.pregame_container {
+  width: 100%;
+  background-color: transparent;
+  margin: 20vh 0 0 0;
+  position: relative;
+  overflow: hidden; }
+
+.pregame_container::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  background-color: #F2F2F2;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7; }
+
+/*------------top----------*/
+.top {
+  width: 100%;
+  position: relative;
+  background-color: transparent;
+  height: 10vh; }
+
+.player1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  position: absolute;
+  bottom: 5%;
+  left: 5%; }
+  .player1:last-child {
+    margin-right: 0; }
+  .player1 .player1_icon {
+    display: inline;
+    margin-left: 2em;
+    height: 1em; }
+    @media screen and (min-width: 768px) {
+      .player1 .player1_icon {
+        height: 2em; } }
+  .player1 .player1_name {
+    display: inline;
+    color: #333333;
+    font-size: 1em; }
+    @media screen and (min-width: 768px) {
+      .player1 .player1_name {
+        font-size: 2em; } }
+
+/*------------divide----------*/
+.divider {
+  width: 100%;
+  height: 4vh;
+  overflow: hidden;
+  background-color: #84D4EF;
+  text-align: center; }
+
+.mail_icon {
+  height: 100%;
+  padding: 0.1em 0; }
+
+/*------------bottom----------*/
+.bottom {
+  width: 100%;
+  background-color: transparent;
+  color: #333333;
+  min-height: 10vh; }
+
+.player2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 51.17883%;
+  margin-top: 0.5em; }
+  .player2:last-child {
+    margin-right: 0; }
+  .player2 .player2_name {
+    display: inline;
+    color: #333333;
+    font-size: 1em; }
+    @media screen and (min-width: 768px) {
+      .player2 .player2_name {
+        font-size: 2em; } }
+  .player2 .player2_icon {
+    height: 1em; }
+    @media screen and (min-width: 768px) {
+      .player2 .player2_icon {
+        height: 2em; } }
+
+/*---no opponent----*/
+.play_solo_ask {
+  width: 100%;
+  text-align: center; }
+  .play_solo_ask h2 {
+    color: #333333;
+    font-size: 0.8em;
+    margin: 0.2em 0; }
+    @media screen and (min-width: 768px) {
+      .play_solo_ask h2 {
+        font-size: 1em; } }
+
+.btn_cont {
+  width: 100%; }
+
+.countdownNum {
+  font-size: 0.8em;
+  color: #333333; }
+  @media screen and (min-width: 768px) {
+    .countdownNum {
+      font-size: 1em; } }
+
+.playSoloBtn {
+  font-family: 'Coming Soon', cursive;
+  padding: 0.2em;
+  margin: 0.5em 0;
+  font-size: 0.8em;
+  background-color: white;
+  border: #84D4EF solid 3px;
+  border-radius: 0.4em;
+  color: #333333; }
+  .playSoloBtn:focus {
+    outline: 0; }
+  .playSoloBtn:hover {
+    cursor: pointer;
+    background-color: #ECECEC; }
+  @media screen and (min-width: 768px) {
+    .playSoloBtn {
+      font-size: 1em; } }
+
+.waitBtn {
+  font-family: 'Coming Soon', cursive;
+  padding: 0.2em;
+  margin: 0.5em 0;
+  font-size: 0.8em;
+  background-color: #84D4EF;
+  border: #84D4EF solid 3px;
+  border-radius: 0.4em;
+  color: #333333; }
+  .waitBtn:focus {
+    outline: 0; }
+  .waitBtn:hover {
+    cursor: pointer; }
+  @media screen and (min-width: 768px) {
+    .waitBtn {
+      font-size: 1em; } }

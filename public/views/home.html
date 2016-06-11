@@ -1,0 +1,57 @@
+<div class="wrapper">
+	<div class="header">
+		<div class="choose">
+			<h2 class="choose_text">Choose a category &darr;</h2>
+		</div>
+		<div class="userName_block">
+			<div class="username_cont">
+				<h2 class="username_home" ng-bind="gameData.getPlayer1Name()"></h2>
+				<img class="home_username_icon" src="../img/p1_icon_blk.png">
+			</div>
+		</div>
+	</div>
+	<div class="gameArea"></div>
+	<div class="grid">
+		<div class="stamp_cont_music" ng-click="categoryClick('Music')">
+			<img class="stamp" src="../img/stamp_music.gif">
+			<div class="category_label">
+				<h2 class="category">Music</h2>
+			</div>
+		</div>
+
+		<div class="stamp_cont_science" ng-click="categoryClick('Science')">
+			<img class="stamp" src="../img/stamp_science.gif">
+			<div class="category_label">
+				<h2 class="category">Science</h2>
+			</div>
+		</div>
+
+		<div class="stamp_cont_olympics" ng-click="categoryClick('Olympics')">
+			<img class="stamp" src="../img/stamp_olympics.gif">
+			<div class="category_label">
+				<h2 class="category">Olympics</h2>
+			</div>
+		</div>
+
+		<div class="stamp_cont_presidents" ng-click="categoryClick('USPresidents')">
+			<img class="stamp" src="../img/stamp_presidents.gif">
+			<div class="category_label">
+				<h2 class="category">US Presidents</h2>
+			</div>
+		</div>
+
+		<div class="stamp_cont_movies" ng-click="categoryClick('Movies')">
+			<img class="stamp" src="../img/stamp_movies.jpg">
+			<div class="category_label">
+				<h2 class="category">Movies</h2>
+			</div>
+		</div>
+
+		<div class="stamp_cont_aviation" ng-click="categoryClick('Aviation')">
+			<img class="stamp" src="../img/stamp_aviation.gif">
+			<div class="category_label">
+				<h2 class="category">Aviation</h2>
+			</div>
+		</div>
+	</div>
+</div>
